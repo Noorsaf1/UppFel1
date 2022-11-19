@@ -1,0 +1,99 @@
+
+$colorB: black;
+$colorW: white;
+
+@mixin RowF {
+	display: flex;
+	flex-wrap: wrap;
+}
+@mixin FontC {
+	text-align: center;
+}
+
+  
+  .footer {
+	background-color: $colorB;
+	padding: 25px 0;
+  }
+  
+  .container {
+	max-width: 1170px;
+	background-color: $colorB;
+	margin: auto;
+	flex: auto;
+  }
+  
+  .row {
+	@include RowF();
+  }
+  
+  .footer-map {
+	font-size: 18px;
+	color: $colorW;
+	margin-bottom: 30px;
+	position: relative;
+	font-weight: 500;
+	width: 33%;
+	padding: 0 15px;
+  }
+  
+  .footer-conatact {
+	font-size: 18px;
+	color: $colorW;
+	margin-bottom: 30px;
+	position: relative;
+	font-weight: 500;
+	width: 35%;
+	padding: 0 15px;
+  }
+  
+  .footer-social {
+	font-size: 18px;
+	color: $colorW;
+	margin-bottom: 30px;
+	position: relative;
+	font-weight: 500;
+	width: 30%;
+	padding: 0 80px;
+  }
+  
+  .map {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	margin-left: 20%;
+	height: 5%;
+  }
+  
+  .map1 {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	margin-right: -0.55em;
+	height: 5%;
+  }
+  
+  .map2 {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	margin-right: -1.4em;
+  }
+  
+  .f-contact {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	height: 5%;
+  }
+  
+  .f-contact1 {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	margin-right: 22.5%;
+  }
+  
+  .social-links {
+	margin-left: 35%;
+  }
+
+  h1 {
+	@include FontC();
+	
+  }
+  
+  h4 {
+	
+	@include FontC();
+  }

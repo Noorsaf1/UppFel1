@@ -1,0 +1,70 @@
+
+@use  "./body";
+@use "./navbar";
+@use "./home";
+@use "./about";
+@use "./Down1";
+@use "./Down2";
+@use "./footer";
+
+
+
+
+
+/*# sourceMappingURL=main.css.map */
+
+
+
+ 
+@media(max-width:800px){
+    .hamburger{
+      display: block;
+    }
+   .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+   .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+   .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+   .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: $colorG;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      display: none;
+    }
+   .nav-item{
+      margin: 16px 0;
+    }
+   .nav-menu.active{
+        top:70px;
+      left: auto;
+    }
+
+    .downn{
+        display: flex;
+        position: relative;
+        top: -5px;
+    }
+
+
+  
+  }
+
+
+
+
+  
+ 
+  
+ 
+
+  

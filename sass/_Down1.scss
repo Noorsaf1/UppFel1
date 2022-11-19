@@ -1,0 +1,20 @@
+ /* down downnnnnnn nummer 1 */
+
+ $colorW: white;
+
+ .scroll-down {
+	position: absolute;
+	top: 670px;
+	left: 48%;
+	font-size: 30px;
+	
+    &:before {
+        display: block;
+        width: 12px;
+        height: 12px;
+      }
+     a {
+        color: $colorW;
+      }
+  }
+ 

@@ -1,0 +1,99 @@
+  /* Section two for about*/
+  $colorB: black;
+  $colorGG: #c4c4c480;
+
+  @mixin alignC {
+    text-align: center;
+  }
+  @mixin flexCenter {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+
+  
+
+  #about {
+	display: block;
+  }
+  
+  .title {
+	@include alignC();
+	text-transform: capitalize;
+	color: $colorB;
+	margin: 10px;
+	position: relative;
+	top: 5%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 20%;
+        height: 2px;
+        background-image: linear-gradient(to right, transparent 5%, #7f7c8c);
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+  }
+ 
+
+  .team-row {
+	@include flexCenter();
+	position: relative;
+	bottom: 20px;
+  }
+
+  .member {
+	width: 400px;
+	height: 416px;
+	margin: 100px;
+
+    img {
+        width: 200px;
+        height: 200px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border: 1px solid;
+        border-radius: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+        box-shadow: 0 10px 20px;
+        transform: translateY(-20px);
+        position: relative;
+        left: 20%;
+      }
+    
+    
+      h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: $colorB;
+        margin-bottom: 30px;
+        position: relative;
+        left: 120px;
+      }
+
+      p {
+        font-size: 20px;
+        color: $colorB;
+        line-height: 1.6;
+        border: 2px  solid;
+        padding: 10px;
+        border-radius: 7px;
+        background-color: $colorGG;
+        margin-bottom: -20px;
+        position: relative;
+        right: 20px;
+      }
+      i {
+        font-size: 40px;
+      }
+  }
+ 
+
+  .move{
+	margin-left: 25px;
+  }
+
